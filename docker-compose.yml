@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_FazaA
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "22067:5432"
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_FazaA
+    ports:
+      - "441067:80"
