@@ -12,4 +12,4 @@ services:
     image: dpage/pgadmin4
     container_name: pgadmin_FazaA
     ports:
-      - "441067:80"
+      - "44067:80"
